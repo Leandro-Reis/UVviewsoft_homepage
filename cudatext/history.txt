@@ -3,6 +3,59 @@
   - fixed
   * changed
 
+1.91.0 (2019/12)
+
++ add: Windows: shell extension DLL (x32, x64), it was written by Andreas Heim (@dinkumoil). Run Cmd script from Explorer to install/uninstall the DLL.
++ add: Find/Replace dialog has new button "Replace global", to replace all matches in all opened documents
++ add: Ctrl+click on selection was ignored before, now it can start drag-drop with copying
++ add: option "key_bksp_wrap": allows BackSpace to go to previous line
++ add: dialog "Go to bookmark" reworked: it shows bookmarks in all opened documents; it shows tab titles; it has filter inputbox
+* change: Command Palette commands "find first", "find next", "find all ..." now search for current text of Find dialog inputbox
+- fix: lexer Bash: issue with line comment
+- fix: must not clear code-tree on closing passive (lefter) tab
+- fix: must not clear code-tree on clicking active tab
+
+1.90.0 (2019/11)
+
++ add: Command Palette shows items "opened files: ..."
++ add: Command Palette shows items "recent files: ..."
++ add: Command Palette: support filtering by category: #p (plugins), #l (lexers), #f (opened files), #r (recent files)
++ add: Command Palette: Ctrl+J means "move down", Ctrl+K means "move up"
++ add: option "ui_tree_sublexers"
+* change: Command Palette and other menu-dialogs: keys Home/End are used for input box, Ctrl+Home/Ctrl+End for listbox
+- fix: command "Close all" ignored modified state of 2nd file in pair-tab
+- fix: some APIs worked only for active editor, it gave issues in "File Type Profile" plugin
+- fix: command "go to screen top" was broken
+- fix: trying to fix rare program freezing with "ui_notif" option
+- fix: listbox in sidebar plugins (Tabs List, etc) should use color of Code Tree, not of Command Palette 
+- fix: typing bracket with _backward_ multiline selection
+- fix: re-opening UTF8-BOM file could show the BOM
+- fix: horizontal scrollbar could hide even with scroll offset present
+
+1.89.4 (2019/11)
+
++ add: bracket highlighting now also finds nearest surrounding brackets (like VS Code)
++ add: lexer C: fix keywords, fix ligatures
++ add: lexer C++: fix keywords, fix ligatures
++ add: lexer Ruby: fix keywords, fix ligatures
+* change: bracket highlighting now ignores brackets in comments/strings (to show surrounding brackets in real code)
+* change: deleted menu item "Help / Changelog"
+* change: deleted folder "readme" from Linux/macOS installers
+
+1.89.2 (2019/11)
+
++ add: horizontal scrollbar in Output/Validate panels (it auto shows for long lines)
++ add: don't run Multi Installer on first start, just show info message
++ add: lexer CSS: support more standard properties
++ add: lexer CSS: underline incorrect units after numbers
+* change: replace option "hide_horiz_scrollbar" with "scroll_style_horz" (enum)
+- fix: theme filenames in mixed case could not be used
+- fix: file session did not restore saved encoding
+- fix: not working HTML auto-completion tag list
+- fix: incorrect multi-caret positions after Del on complex selections
+- fix: slow start of plugin Config Toolbar
+- fix: reset of file encoding after Reopen command
+
 1.89.0 (2019/10)
 
 + add: built-in bracket highlighting, no more need in plugin Bracket Helper, and it works much faster than plugin. It supports most of plugin's features, including show brackets on gutter, including checks for syntax elements.
