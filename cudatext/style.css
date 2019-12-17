@@ -1,6 +1,7 @@
 body {
 	font-family: "Segoe UI";
-	background-image: linear-gradient(160deg, #290B36 10%, #043453 80%);
+	/*background-image: linear-gradient(160deg, #290B36 10%, #043453 80%);*/
+    background-image: url(../backgourd3.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	font-size: 16px;
@@ -43,15 +44,15 @@ body {
 .textbox {
 	margin: 0px auto 0px auto;
 	width: 880px;
-	background-color: rgba(255, 255, 255, 0.13);
+	background-color: rgb(255, 255, 255);
 	border-width: 1px;
 	border-color: rgba(114, 114, 114, 0.39);
 	border-style: solid;
 	border-radius: 5px;
 	padding: 10px;
-	box-shadow: inset 0px 0px 70px 16px rgba(65, 65, 65, 0);
+	box-shadow: inset 0px 0px 70px 16px rgba(255, 255, 255, 0);
 	transition: background 0.6s linear;
-	color: #fff;
+	color: #484848;
 	text-align: justify;
 }
 

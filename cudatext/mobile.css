@@ -1,6 +1,5 @@
 @media (min-width: 320px) and (max-width: 991px) {
     body {
-        padding: 15px;
         margin: 0;
     }
 
@@ -41,5 +40,6 @@
     .textbox,
     .foot {
         margin-top: 15px;
+        border-radius: 0;
     }
 }

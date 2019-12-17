@@ -1,7 +1,11 @@
 @media (min-width: 320px) and (max-width: 991px) {
+
+    * a{
+        text-decoration: none;
+    }
     body {
-        padding: 15px;
         margin: 0;
+
     }
 
     body,
@@ -50,7 +54,9 @@
     .product {
         float: none;
         width: 100%;
-        margin-left: 0;
+        margin: 0;
         box-sizing: border-box;
+        border-radius: 0;
+        margin-bottom: 3px;
     }
 }
